@@ -113,3 +113,19 @@ ul.actions.special .button { min-width: 11em; }
 	ul.actions.special li { width: 100%; text-align: center; }
 	ul.actions.special .button { width: 100%; max-width: 20em; }
 }
+
+.proyecto .enlace { margin: 1.25em 0 0; }
+
+/* Ajustes finales de alineación */
+.proyecto h3 { text-align: left; }
+ul.actions.special .button { min-width: 9.5em; padding: 0 1em; letter-spacing: 0.1em; }
+footer.major.container.medium { max-width: 60em; }
+
+/* Navegación del pie de la sección principal: 4 botones en una sola línea en pantallas anchas */
+@media screen and (min-width: 737px) {
+	#main ul.actions.special { flex-wrap: nowrap; gap: 0.6em; }
+	#main ul.actions.special .button { min-width: 0; padding: 0 1.3em; font-size: 0.8em; letter-spacing: 0.08em; }
+}
+
+/* Sobre mí y contacto: títulos alineados con el texto */
+.prose h2, .prose h3 { text-align: left; }

@@ -111,3 +111,9 @@ ul.actions li { padding: 0; margin: 0; }
 	ul.actions .button { width: 100%; max-width: none; }
 	#nav a { padding: 0 0.8em; font-size: 0.95em; }
 }
+
+/* Alineación: el contenido de las páginas interiores va a la izquierda; solo el título va centrado */
+.page .container > section, .page .entry, .page .entry *, .page .idiomas, .page .idiomas * { text-align: left; }
+.idiomas dt, .idiomas dd { margin: 0; padding: 0; }
+.page header.sub h2 { margin: 0; }
+.contact-list, .contact-list li { text-align: left; }

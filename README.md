@@ -25,7 +25,8 @@ Después abre `http://localhost:8000/`.
 .
 ├── index.html
 ├── cv/          index · estudios · experiencia · contacto
-└── portfolio/   index · proyectos · sobre-mi · contacto
+├── portfolio/   index · proyectos · sobre-mi · contacto
+└── proyectos-asir/   guía y plantilla para incorporar nuevas prácticas (sin proyectos publicados todavía)
 ```
 Cada web tiene su carpeta `assets/` (CSS, JavaScript y tipografías de iconos). Los ajustes propios están en `assets/css/custom.css` y no modifican los archivos de la plantilla.
 
