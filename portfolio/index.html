@@ -1,88 +1,78 @@
 <!DOCTYPE HTML>
 <html lang="es">
 <head>
-    <title>Portfolio - Jorge Aguado</title>
+    <title>Portfolio · Jorge Aguado</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio de Jorge Aguado, estudiante de 2.º de ASIR: proyectos académicos y personales." />
+    <meta name="theme-color" content="#21395c" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%2321395c%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-size=%2732%27 font-family=%27Arial%27 font-weight=%27bold%27 text-anchor=%27middle%27 fill=%27white%27%3EJA%3C/text%3E%3C/svg%3E" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body class="is-preload">
 
-    <!-- Header -->
     <div id="header">
-        <span class="logo icon fa-paper-plane"></span>
+        <span class="logo icon solid fa-terminal"></span>
         <h1>Portfolio de Jorge Aguado</h1>
-        <p>Proyectos y prácticas realizados durante mi formación en Administración de Sistemas Informáticos en Red.</p>
+        <p>Estudiante de 2.º de ASIR | Automatización y ciberseguridad</p>
     </div>
 
-    <!-- Main -->
     <div id="main">
-
         <header class="major container medium">
             <h2>Administración de sistemas,
             <br />
-            redes, virtualización
-            <br />
-            y servicios web</h2>
-            <p>Una selección de trabajos y tecnologías que he utilizado durante ASIR.</p>
+            redes y automatización</h2>
+            <p>Estudiante de segundo de ASIR con especial interés en automatización y ciberseguridad. Tengo conocimientos prácticos de Windows Server, Linux y redes, y desarrollo proyectos personales con Python y n8n. Busco unas prácticas donde aplicar mis conocimientos, seguir aprendiendo y crecer profesionalmente.</p>
         </header>
 
-        <div class="box alt container">
-            <section class="feature left">
-                <a href="proyectos.html" class="image icon solid fa-server"><img src="images/pic01.jpg" alt="Servidor web Apache" /></a>
-                <div class="content">
-                    <h3>Servidor web Apache</h3>
-                    <p>Instalación y configuración de Apache en Debian para alojar varias páginas web estáticas y comprobar su acceso desde la red.</p>
-                </div>
-            </section>
-
-            <section class="feature right">
-                <a href="proyectos.html" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="Virtualización y sistemas Linux" /></a>
-                <div class="content">
-                    <h3>Virtualización y Linux</h3>
-                    <p>Creación y administración de máquinas virtuales con VirtualBox, configuración de servicios y trabajo con terminal Linux.</p>
-                </div>
-            </section>
-
-            <section class="feature left">
-                <a href="proyectos.html" class="image icon solid fa-network-wired"><img src="images/pic03.jpg" alt="Administración de redes" /></a>
-                <div class="content">
-                    <h3>Redes y servicios</h3>
-                    <p>Prácticas de direccionamiento IP, configuración de interfaces, routing y resolución de problemas de conectividad.</p>
-                </div>
-            </section>
-        </div>
+        <section class="container">
+            <div class="cards">
+                <a class="card" href="proyectos.html#academicos">
+                    <span class="card-icon icon solid fa-user-graduate"></span>
+                    <h3>Proyectos académicos</h3>
+                    <p>Configuración de Windows Server y Linux, Active Directory, GPO, permisos y firewall en entornos virtualizados.</p>
+                </a>
+                <a class="card" href="proyectos.html#personales">
+                    <span class="card-icon icon solid fa-laptop-code"></span>
+                    <h3>Proyectos personales</h3>
+                    <p>Automatización de procesos con Python y n8n, en desarrollo.</p>
+                </a>
+                <a class="card" href="sobre-mi.html">
+                    <span class="card-icon icon solid fa-id-card"></span>
+                    <h3>Sobre mí</h3>
+                    <p>Perfil, conocimientos técnicos y áreas de interés.</p>
+                </a>
+            </div>
+        </section>
 
         <footer class="major container medium">
-            <h3>Más sobre mi trabajo</h3>
-            <p>En las páginas del portfolio puedes consultar proyectos, información sobre mí y datos de contacto.</p>
             <ul class="actions special">
-                <li><a href="proyectos.html" class="button">Ver proyectos</a></li>
+                <li><a href="index.html" class="button">Inicio</a></li>
+                <li><a href="proyectos.html" class="button alt">Proyectos</a></li>
                 <li><a href="sobre-mi.html" class="button alt">Sobre mí</a></li>
+                <li><a href="contacto.html" class="button alt">Contacto</a></li>
             </ul>
         </footer>
-
     </div>
 
-    <!-- Footer -->
     <div id="footer">
         <div class="container medium">
             <header class="major last">
-                <h2>Contacto</h2>
+                <h2>Jorge Aguado</h2>
             </header>
-            <p>Si quieres consultar mis proyectos o contactar conmigo, puedes acceder a la página de contacto.</p>
             <ul class="actions special">
-                <li><a href="contacto.html" class="button">Ir a contacto</a></li>
+                <li><a href="https://www.linkedin.com/in/jorge-aguado-rodr%C3%ADguez-rabad%C3%A1n-2b875238a" class="button" rel="noopener" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/JorgeAguado1" class="button" rel="noopener" target="_blank">GitHub</a></li>
+                <li><a href="../cv/" class="button">Currículum</a></li>
             </ul>
-
             <ul class="copyright">
-                <li>&copy; Jorge Aguado.</li>
-                <li>Diseño: <a href="https://html5up.net">HTML5 UP</a></li>
+                <li>&copy; Jorge Aguado</li>
+                <li>Plantilla: <a href="https://html5up.net">Directive</a> de HTML5 UP · <a href="https://html5up.net/license">CC BY 3.0</a></li>
             </ul>
         </div>
     </div>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>

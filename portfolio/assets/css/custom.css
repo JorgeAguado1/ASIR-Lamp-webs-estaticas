@@ -1,0 +1,115 @@
+/*
+ * Ajustes propios sobre la plantilla Directive (HTML5 UP, CC BY 3.0).
+ * Paleta azul marino coherente con el currículum, sin imagen de cabecera de muestra.
+ * Se carga después de main.css y no modifica los archivos de la plantilla.
+ */
+:root {
+	--navy: #21395c;
+	--navy-deep: #16263f;
+	--accent: #2f6fa8;
+	--accent-hover: #3a82c4;
+	--bg: #f4f6f9;
+	--line: #e1e6ee;
+	--ink: #1c2533;
+	--muted: #5b6678;
+}
+
+body, input, textarea, select { color: var(--muted); }
+a { color: var(--accent); border-bottom-color: rgba(47, 111, 168, 0.35); }
+a:hover { color: var(--accent-hover); border-bottom-color: transparent; }
+h1, h2, h3, h4, h5, h6 { color: var(--navy-deep); }
+
+/* Cabecera sin foto de muestra: degradado azul marino + el recorte angular de la plantilla */
+#header {
+	background-color: var(--navy);
+	background-image: url("images/top-3200.svg"), linear-gradient(160deg, var(--navy-deep), var(--navy));
+	background-size: 3200px 460px, cover;
+	padding-bottom: 14em;
+}
+#header h1, #header p { color: #fff; }
+#header p { color: rgba(255, 255, 255, 0.85); }
+#header .logo { background: var(--accent); color: #fff; box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.12); }
+@media screen and (max-width: 1680px) {
+	#header { background-image: url("images/top-1600.svg"), linear-gradient(160deg, var(--navy-deep), var(--navy)); background-size: 1600px 230px, cover; }
+}
+@media screen and (max-width: 1280px) {
+	#header { background-image: url("images/top-1280.svg"), linear-gradient(160deg, var(--navy-deep), var(--navy)); background-size: 1280px 184px, cover; padding-bottom: 7em; }
+}
+@media screen and (max-width: 736px) {
+	#header { padding-top: 3em; }
+}
+
+/* Botones */
+.button { background: var(--navy); }
+.button:hover { background: var(--accent); }
+.button:active { background: var(--navy-deep); }
+.button.alt { background: none; color: var(--navy); box-shadow: inset 0 0 0 1px var(--line); }
+.button.alt:hover { background: var(--bg); color: var(--navy); }
+.button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+/* Pie */
+#footer { background-color: var(--accent); }
+#footer .button { background: #fff; color: var(--navy); }
+#footer .button:hover { background: var(--bg); color: var(--navy-deep); }
+#footer a { color: #fff; }
+#footer h2 { color: #fff; }
+
+/* Tarjetas de la portada: una columna, icono a la izquierda */
+.cards { display: grid; grid-template-columns: 1fr; gap: 1.25em; margin: 2em 0 4em; }
+.card {
+	display: grid; grid-template-columns: auto 1fr; column-gap: 1.5em; align-items: start;
+	background: #fff; border: 1px solid var(--line); border-radius: 12px;
+	padding: 1.75em; text-align: left; text-decoration: none; border-bottom: 1px solid var(--line);
+	box-shadow: 0 6px 18px rgba(22, 38, 63, 0.07); transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover, .card:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(22, 38, 63, 0.13); border-bottom-color: var(--line); }
+.card:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.card-icon { grid-row: 1 / span 2; width: 3.2em; height: 3.2em; line-height: 3.2em; text-align: center; background: rgba(47, 111, 168, 0.1); color: var(--accent); border-radius: 50%; }
+.card-icon:before { line-height: 3.2em; font-size: 1.2em; }
+.card h3 { margin: 0 0 0.4em; color: var(--navy-deep); }
+.card p { margin: 0; line-height: 1.6; color: var(--muted); text-transform: none; letter-spacing: normal; font-size: 0.95em; }
+
+/* Proyectos */
+.section-head { text-align: center; margin: 3em 0 1.5em; }
+.tag-label { display: inline-block; font-size: 0.75em; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.35em 1em; border-radius: 999px; background: rgba(47, 111, 168, 0.12); color: var(--accent); margin-bottom: 0.75em; }
+.tag-label.alt { background: rgba(33, 57, 92, 0.1); color: var(--navy); }
+.proyecto { background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 1.75em; margin-bottom: 1.5em; box-shadow: 0 6px 18px rgba(22, 38, 63, 0.06); }
+#personales .proyecto { border-left-color: var(--navy); }
+.proyecto h3 { margin-bottom: 0.6em; }
+.proyecto p { text-transform: none; letter-spacing: normal; line-height: 1.7; }
+.estado { display: inline-block; font-size: 0.6em; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; vertical-align: middle; padding: 0.3em 0.8em; border-radius: 999px; background: var(--bg); color: var(--muted); margin-left: 0.5em; }
+.tags { list-style: none; padding: 0; margin: 1em 0 0; display: flex; flex-wrap: wrap; gap: 0.5em; }
+.tags li { padding: 0.3em 0.85em; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); color: var(--navy); font-size: 0.85em; font-weight: 600; letter-spacing: normal; text-transform: none; }
+
+/* Sobre mí / contacto */
+.prose { text-align: left; }
+.prose p, .prose li { text-transform: none; letter-spacing: normal; line-height: 1.7; }
+.prose h3 { margin-top: 1.75em; }
+.contact-list { list-style: none; padding: 0; margin: 1.5em 0 0; }
+.contact-list li { padding: 0.7em 0; border-bottom: 1px solid var(--line); text-transform: none; letter-spacing: normal; }
+.contact-list .icon { color: var(--accent); width: 1.75em; display: inline-block; }
+
+/* Pie de página: créditos legibles */
+.copyright a { color: #fff; }
+
+@media screen and (max-width: 736px) {
+	.cards { margin-bottom: 2em; }
+	.card { grid-template-columns: 1fr; row-gap: 0.5em; }
+	.card-icon { grid-row: auto; }
+	.proyecto { padding: 1.25em; }
+	.button { min-width: 0; width: 100%; max-width: 20em; }
+}
+
+/* Legibilidad: el texto largo del perfil sin mayúsculas forzadas */
+header.major p { text-transform: none; letter-spacing: 0.01em; font-size: 1.05em; line-height: 1.8; }
+.card h3 { text-align: left; }
+
+/* Botones de navegación: que envuelvan en pantallas medianas */
+ul.actions.special { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75em; padding-left: 0; }
+ul.actions.special li { padding-left: 0; margin: 0; }
+ul.actions.special .button { min-width: 11em; }
+@media screen and (max-width: 736px) {
+	ul.actions.special { flex-direction: column; align-items: center; }
+	ul.actions.special li { width: 100%; text-align: center; }
+	ul.actions.special .button { width: 100%; max-width: 20em; }
+}

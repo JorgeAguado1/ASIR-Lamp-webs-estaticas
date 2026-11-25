@@ -2,40 +2,55 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad LAMP - Jorge Aguado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jorge Aguado · ASIR</title>
+    <meta name="description" content="Jorge Aguado, estudiante de 2.º de ASIR. Currículum y portfolio de automatización y ciberseguridad.">
+    <meta name="theme-color" content="#21395c">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%2321395c%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-size=%2732%27 font-family=%27Arial%27 font-weight=%27bold%27 text-anchor=%27middle%27 fill=%27white%27%3EJA%3C/text%3E%3C/svg%3E" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 80px 20px;
-            background: #f4f4f4;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 40px;
-        }
-
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
-            background: #2775c9;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
+        :root { --navy:#21395c; --navy-deep:#16263f; --accent:#2f6fa8; --bg:#f4f6f9; --ink:#1c2533; --muted:#5b6678; }
+        * { box-sizing: border-box; }
+        body { margin:0; min-height:100vh; display:flex; flex-direction:column; font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif; color:var(--ink); background:var(--bg); }
+        header.hero { background:linear-gradient(160deg,var(--navy-deep),var(--navy)); color:#fff; text-align:center; padding:4.5rem 1.25rem 5.5rem; }
+        .hero h1 { margin:0 0 .5rem; font-size:clamp(2rem,6vw,3.2rem); letter-spacing:.02em; }
+        .hero p { margin:0 auto; max-width:38rem; color:rgba(255,255,255,.85); font-size:clamp(1rem,2.6vw,1.2rem); }
+        main { flex:1; width:100%; max-width:46rem; margin:-3rem auto 0; padding:0 1.25rem 2.5rem; }
+        .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1.25rem; }
+        .card { display:block; background:#fff; border:1px solid #e1e6ee; border-radius:12px; padding:1.5rem; text-decoration:none; color:inherit; box-shadow:0 6px 18px rgba(22,38,63,.08); transition:transform .15s ease, box-shadow .15s ease; }
+        .card:hover, .card:focus-visible { transform:translateY(-3px); box-shadow:0 10px 24px rgba(22,38,63,.14); outline:none; }
+        .card:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+        .card h2 { margin:0 0 .4rem; font-size:1.25rem; color:var(--navy); }
+        .card p { margin:0; color:var(--muted); line-height:1.5; }
+        .links { display:flex; flex-wrap:wrap; justify-content:center; gap:.75rem 1.5rem; margin:1.75rem 0 0; padding:0; list-style:none; }
+        .links a { color:var(--accent); font-weight:600; text-decoration:none; }
+        .links a:hover { text-decoration:underline; }
+        footer { text-align:center; padding:1.25rem; font-size:.85rem; color:var(--muted); }
+        footer a { color:var(--muted); }
     </style>
 </head>
 <body>
-    <h1>Actividad LAMP</h1>
-    <p>Jorge Aguado - ASIR</p>
-
-    <a href="cv/">Ver Currículum</a>
-    <a href="portfolio/">Ver Portfolio</a>
+    <header class="hero">
+        <h1>Jorge Aguado</h1>
+        <p>Estudiante de 2.º de ASIR | Automatización y ciberseguridad</p>
+    </header>
+    <main>
+        <div class="cards">
+            <a class="card" href="cv/">
+                <h2>Currículum</h2>
+                <p>Perfil, conocimientos técnicos, formación, idiomas y otras experiencias.</p>
+            </a>
+            <a class="card" href="portfolio/">
+                <h2>Portfolio</h2>
+                <p>Proyectos académicos y personales, por separado.</p>
+            </a>
+        </div>
+        <ul class="links">
+            <li><a href="https://www.linkedin.com/in/jorge-aguado-rodr%C3%ADguez-rabad%C3%A1n-2b875238a" rel="noopener" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/JorgeAguado1" rel="noopener" target="_blank">GitHub</a></li>
+        </ul>
+    </main>
+    <footer>
+        Webs estáticas basadas en las plantillas Miniport y Directive de <a href="https://html5up.net">HTML5 UP</a> (<a href="https://html5up.net/license">CC BY 3.0</a>).
+    </footer>
 </body>
 </html>

@@ -1,48 +1,56 @@
 <!DOCTYPE HTML>
 <html lang="es">
 <head>
-    <title>Proyectos - Jorge Aguado</title>
+    <title>Proyectos · Jorge Aguado</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Proyectos académicos y personales de Jorge Aguado, estudiante de ASIR." />
+    <meta name="theme-color" content="#21395c" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%2321395c%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-size=%2732%27 font-family=%27Arial%27 font-weight=%27bold%27 text-anchor=%27middle%27 fill=%27white%27%3EJA%3C/text%3E%3C/svg%3E" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 <body class="is-preload">
 
     <div id="header">
-        <span class="logo icon fa-paper-plane"></span>
+        <span class="logo icon solid fa-terminal"></span>
         <h1>Proyectos</h1>
-        <p>Algunos trabajos realizados durante mi formación en ASIR.</p>
+        <p>Académicos y personales, por separado.</p>
     </div>
 
     <div id="main">
-        <div class="box container">
-            
-    <section>
-        <header><h2>Servidor web Apache</h2></header>
-        <p>Instalación y configuración de Apache en Debian para alojar varias páginas web estáticas. Configuración del servicio, estructura de directorios, permisos y comprobación de acceso desde el navegador.</p>
-    </section>
-    <hr />
-    <section>
-        <header><h2>Virtualización con VirtualBox</h2></header>
-        <p>Creación de máquinas virtuales Linux, configuración de red NAT, redirección de puertos y acceso remoto mediante SSH.</p>
-    </section>
-    <hr />
-    <section>
-        <header><h2>Administración de redes</h2></header>
-        <p>Prácticas de direccionamiento IPv4, configuración de interfaces, routing y resolución de incidencias de conectividad.</p>
-    </section>
-    <hr />
-    <section>
-        <header><h2>Git y GitHub</h2></header>
-        <p>Uso de Git para control de versiones y publicación de proyectos web mediante repositorios y GitHub Pages.</p>
-    </section>
-    
-        </div>
+        <section class="container" id="academicos">
+            <header class="section-head">
+                <p class="tag-label">Académicos</p>
+                <h2>Proyectos académicos de ASIR</h2>
+            </header>
+            <article class="proyecto">
+                <h3>Administración y seguridad de sistemas</h3>
+                <p>Configuración de Windows Server y Linux, Active Directory, directivas GPO, permisos de acceso y reglas de firewall en entornos virtualizados.</p>
+                <ul class="tags">
+                    <li>Windows Server</li><li>Linux</li><li>Active Directory</li><li>GPO</li><li>Permisos</li><li>Firewall</li><li>Entornos virtualizados</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="container" id="personales">
+            <header class="section-head">
+                <p class="tag-label alt">Personales</p>
+                <h2>Proyectos personales</h2>
+            </header>
+            <article class="proyecto">
+                <h3>Automatización de procesos <span class="estado">en desarrollo</span></h3>
+                <p>Proyecto personal de automatización de procesos con Python y n8n. Todavía está en desarrollo y por ahora no es público.</p>
+                <ul class="tags">
+                    <li>Python</li><li>n8n</li>
+                </ul>
+            </article>
+        </section>
 
         <footer class="major container medium">
             <ul class="actions special">
-                <li><a href="index.html" class="button">Inicio</a></li>
-                <li><a href="proyectos.html" class="button alt">Proyectos</a></li>
+                <li><a href="index.html" class="button alt">Inicio</a></li>
+                <li><a href="proyectos.html" class="button">Proyectos</a></li>
                 <li><a href="sobre-mi.html" class="button alt">Sobre mí</a></li>
                 <li><a href="contacto.html" class="button alt">Contacto</a></li>
             </ul>
@@ -51,9 +59,17 @@
 
     <div id="footer">
         <div class="container medium">
+            <header class="major last">
+                <h2>Jorge Aguado</h2>
+            </header>
+            <ul class="actions special">
+                <li><a href="https://www.linkedin.com/in/jorge-aguado-rodr%C3%ADguez-rabad%C3%A1n-2b875238a" class="button" rel="noopener" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/JorgeAguado1" class="button" rel="noopener" target="_blank">GitHub</a></li>
+                <li><a href="../cv/" class="button">Currículum</a></li>
+            </ul>
             <ul class="copyright">
-                <li>&copy; Jorge Aguado.</li>
-                <li>Diseño: <a href="https://html5up.net">HTML5 UP</a></li>
+                <li>&copy; Jorge Aguado</li>
+                <li>Plantilla: <a href="https://html5up.net">Directive</a> de HTML5 UP · <a href="https://html5up.net/license">CC BY 3.0</a></li>
             </ul>
         </div>
     </div>
