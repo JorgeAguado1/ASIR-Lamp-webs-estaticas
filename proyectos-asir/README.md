@@ -10,16 +10,5 @@ Esta carpeta prepara la estructura para documentar más prácticas de ASIR en el
 4. **Enunciados y exámenes:** no se publican ni se copian. Se resumen con palabras propias y, si la práctica fue un examen o es material del profesor, se consulta antes de publicar nada.
 5. **Una carpeta por proyecto**, con su `README.md` basado en [`PLANTILLA.md`](PLANTILLA.md). Cuando esté revisado y aprobado, se añade su tarjeta en `portfolio/proyectos.html`, en la sección de proyectos académicos.
 
-## Temas previstos
-Lista de trabajo, no es contenido publicado. Ninguno tiene documentación todavía.
-
-| Tema | Carpeta prevista | Estado |
-|---|---|---|
-| ASOserver1 | `asoserver1/` | Sin documentar |
-| ASOserver2 | `asoserver2/` | Sin documentar |
-| Windows Server | `windows-server/` | Sin documentar |
-| Samba | `samba/` | Sin documentar |
-| DHCP | `dhcp/` | Sin documentar |
-| NGINX | `nginx/` | Sin documentar |
-| BIND9 | `bind9/` | Sin documentar |
-| iptables | `iptables/` | Sin documentar |
+## Cómo se irán añadiendo
+Los proyectos se incorporan de uno en uno, cada uno en su propia carpeta y solo cuando su documentación esté revisada y aprobada.
